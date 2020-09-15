@@ -11,6 +11,7 @@ const cors = require('cors')
  */
 const customerRoute = require('./routes/customer')
 const authenticationRoute = require('./routes/authentication')
+const ordersRoute = require('./routes/orders')
 
 const path = require('path')
 
@@ -24,6 +25,7 @@ app.use(express.static('./public'))
 app.use(cors())
 app.use('/customer', customerRoute)
 app.use('/authentication', authenticationRoute)
+app.use('/orders', ordersRoute)
 
 /**
  * Connection here
