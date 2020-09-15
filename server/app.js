@@ -9,6 +9,8 @@ const cors = require('cors')
 /**
  * Route links here
  */
+const customerRoute = require('./routes/customer')
+const authenticationRoute = require('./routes/authentication')
 
 const path = require('path')
 
@@ -20,12 +22,14 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 app.use(express.static('./public'))
 app.use(cors())
-
+app.use('/customer', customerRoute)
+app.use('/authentication', authenticationRoute)
 
 /**
  * Connection here
  */
 const port = process.env.PORT || 3000;
+
 console.log(process.env.TOKEN_SECRET);
 app.listen(port, () => {
     console.log(`Listen on ${port}`);
