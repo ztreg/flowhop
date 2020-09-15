@@ -1,0 +1,15 @@
+.menu__section {
+    height: 100%;
+    width: 100%;
+    background: url("../assets/graphics-header.svg") top, url("../assets/graphics-footer.svg") bottom;
+    background-repeat: no-repeat;
+    background-color: #F3E4E1;
+    padding: 35% 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .menu__title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
