@@ -1,0 +1,14 @@
+<template>
+  <section class="hero__section">
+    <div class="jumbotron">
+      <div class="logo"></div>
+      <h1 class="title">Air bean</h1>
+      <span class="description">Dronedelivered coffee</span>
+    </div>
+  </section>
+</template>
+
+<script>
+import "./index.scss";
+export default {};
+</script>
