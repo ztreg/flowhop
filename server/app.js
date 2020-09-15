@@ -12,6 +12,7 @@ const cors = require('cors')
 const customerRoute = require('./routes/customer')
 const authenticationRoute = require('./routes/authentication')
 const ordersRoute = require('./routes/orders')
+const productsRoute = require('./routes/products')
 
 const path = require('path')
 
@@ -23,9 +24,11 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 app.use(express.static('./public'))
 app.use(cors())
+
 app.use('/customer', customerRoute)
 app.use('/authentication', authenticationRoute)
 app.use('/orders', ordersRoute)
+app.use('/products', productsRoute)
 
 /**
  * Connection here
