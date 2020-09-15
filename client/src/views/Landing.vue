@@ -1,15 +1,16 @@
 <template>
-  <div class="landing">
-    <Hero />
-  </div>
+  <section class="hero__section">
+    <div class="jumbotron">
+      <div class="logo"></div>
+      <h1 class="title">Air bean</h1>
+      <span class="description">Dronedelivered coffee</span>
+    </div>
+  </section>
 </template>
 
 <script>
-import Hero from "@/components/Hero";
+import "@/styles/landing.scss";
 export default {
-  name: "Home",
-  components: {
-    Hero
-  }
+  name: "Landing"
 };
 </script>
